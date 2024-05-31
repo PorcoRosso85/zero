@@ -10,7 +10,7 @@
     { self
     , nixpkgs
     , flake-utils
-      # , parent 
+      # , parent
     }:
     flake-utils.lib.eachDefaultSystem (system:
     let
@@ -22,9 +22,10 @@
       devShell = pkgs.mkShell {
         buildInputs = [
           pkgs.zig
+          pkgs.zls
         ];
         shellHook = ''
-          # 
+          #
         '';
         # inputsFrom = parentOutPuts.packages.${system};
       };
@@ -45,7 +46,7 @@
         };
         hello2 = flake-utils.lib.mkApp {
           drv = pkgs.writeShellScriptBin "hello_from_shell" ''
-            echo "Hello from shell!" 
+            echo "Hello from shell!"
           '';
         };
         test = flake-utils.lib.mkApp {
@@ -61,5 +62,3 @@
     }
     );
 }
-
-
