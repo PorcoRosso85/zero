@@ -25,7 +25,10 @@
           pkgs.zls
         ];
         shellHook = ''
-          #
+          export ZIG_PATH=$(which zig)
+          echo "ZIG_PATH: $ZIG_PATH"
+          export ZIG_ZLS_PATH=$(which zls)
+          echo "ZIG_ZLS_PATH: $ZIG_ZLS_PATH"
         '';
         # inputsFrom = parentOutPuts.packages.${system};
       };

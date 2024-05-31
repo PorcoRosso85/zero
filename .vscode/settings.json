@@ -1,4 +1,4 @@
 {
-    "zig.path": "/nix/store/zzp9xhc0cjgzvjzwvylf9ymlycvic40a-zig-0.12.0/bin/zig",
-    "zig.zls.path": "/nix/store/fka9hz0sa5aqhk08b1i0278npn93xlmz-zls-0.12.0/bin/zls"
+    "zig.path": "/nix/store/rwjg7srpajzp1bcibgx2lzd3xv273d50-zig-0.12.0/bin/zig",
+    "zig.zls.path": "/nix/store/i31dmf8hx4kc2j5f9libdf4akin2hfgc-zls-0.12.0/bin/zls"
 }
